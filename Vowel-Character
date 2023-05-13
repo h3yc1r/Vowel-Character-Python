@@ -1,0 +1,17 @@
+#Author: Hacer Aflaz
+#Sesli harf ve sessiz harf sayısı buldurma
+
+sh="aeıioöuü"
+
+kelime=input("İsim giriniz: ")
+sessiz_harf=0
+sesli_harf=0
+
+for i in kelime:
+    if i in sh:
+        sesli_harf+=1
+
+    else:
+        sessiz_harf+=1
+
+print(f"Toplamda  {sessiz_harf}, tane  sessiz harf var. {sesli_harf} tane sesli harf var.")
